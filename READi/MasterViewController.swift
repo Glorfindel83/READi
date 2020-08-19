@@ -177,7 +177,7 @@ class MasterViewController: UITableViewController {
 			object: nil
 		)
 		
-		tableView.rowHeight = UITableViewAutomaticDimension
+		tableView.rowHeight = UITableView.automaticDimension
 		tableView.estimatedRowHeight = 200
 		
 		openWebsocket()
@@ -292,7 +292,7 @@ class MasterViewController: UITableViewController {
 		return false
 	}
 	
-	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 		if editingStyle == .delete {
 			cachedReports.remove(at: indexPath.row)
 			tableView.deleteRows(at: [indexPath], with: .fade)

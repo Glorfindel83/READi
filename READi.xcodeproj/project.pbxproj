@@ -21,31 +21,12 @@
 		ABCDCEC31E83047D00450E8D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDCEC21E83047D00450E8D /* DetailViewController.swift */; };
 		ABCDCEC81E83047D00450E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCDCEC71E83047D00450E8D /* Assets.xcassets */; };
 		ABCDCECB1E83047D00450E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCDCEC91E83047D00450E8D /* LaunchScreen.storyboard */; };
-		ABCDCED61E83047D00450E8D /* READiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDCED51E83047D00450E8D /* READiTests.swift */; };
-		ABCDCEE11E83047D00450E8D /* READiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDCEE01E83047D00450E8D /* READiUITests.swift */; };
 		ABCDCEF01E83049C00450E8D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDCEEE1E83049C00450E8D /* Client.swift */; };
 		ABCDCEF31E8304A700450E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCDCEF21E8304A700450E8D /* Main.storyboard */; };
 		ABCDCEF51E83052A00450E8D /* NSStringHTMLDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDCEF41E83052A00450E8D /* NSStringHTMLDecoding.swift */; };
 		ABCDCEF71E83064000450E8D /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDCEF61E83064000450E8D /* Report.swift */; };
 		ABF25A781E83148300E2105E /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF25A771E83148300E2105E /* LoadingTableViewCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ABCDCED21E83047D00450E8D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABCDCEB31E83047D00450E8D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABCDCEBA1E83047D00450E8D;
-			remoteInfo = READi;
-		};
-		ABCDCEDD1E83047D00450E8D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABCDCEB31E83047D00450E8D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABCDCEBA1E83047D00450E8D;
-			remoteInfo = READi;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		53F1326D1F37627E0011CB4C /* autoflagging.user.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = autoflagging.user.js; sourceTree = "<group>"; };
@@ -64,12 +45,6 @@
 		ABCDCEC71E83047D00450E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABCDCECA1E83047D00450E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABCDCECC1E83047D00450E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABCDCED11E83047D00450E8D /* READiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = READiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABCDCED51E83047D00450E8D /* READiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READiTests.swift; sourceTree = "<group>"; };
-		ABCDCED71E83047D00450E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABCDCEDC1E83047D00450E8D /* READiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = READiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABCDCEE01E83047D00450E8D /* READiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READiUITests.swift; sourceTree = "<group>"; };
-		ABCDCEE21E83047E00450E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABCDCEEE1E83049C00450E8D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		ABCDCEF21E8304A700450E8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABCDCEF41E83052A00450E8D /* NSStringHTMLDecoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringHTMLDecoding.swift; sourceTree = "<group>"; };
@@ -85,20 +60,6 @@
 				AB8026BA1E872E600042D757 /* SwiftWebSocket.framework in Frameworks */,
 				AB8026B91E872E600042D757 /* DTCoreText.framework in Frameworks */,
 				AB8026BC1E8730640042D757 /* DTFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABCDCECE1E83047D00450E8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABCDCED91E83047D00450E8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				ABCDCEBD1E83047D00450E8D /* READi */,
-				ABCDCED41E83047D00450E8D /* READiTests */,
-				ABCDCEDF1E83047D00450E8D /* READiUITests */,
 				ABCDCEBC1E83047D00450E8D /* Products */,
 				AB8026741E8704800042D757 /* Frameworks */,
 			);
@@ -139,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				ABCDCEBB1E83047D00450E8D /* READi.app */,
-				ABCDCED11E83047D00450E8D /* READiTests.xctest */,
-				ABCDCEDC1E83047D00450E8D /* READiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,24 +125,6 @@
 			path = READi;
 			sourceTree = "<group>";
 		};
-		ABCDCED41E83047D00450E8D /* READiTests */ = {
-			isa = PBXGroup;
-			children = (
-				ABCDCED51E83047D00450E8D /* READiTests.swift */,
-				ABCDCED71E83047D00450E8D /* Info.plist */,
-			);
-			path = READiTests;
-			sourceTree = "<group>";
-		};
-		ABCDCEDF1E83047D00450E8D /* READiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ABCDCEE01E83047D00450E8D /* READiUITests.swift */,
-				ABCDCEE21E83047E00450E8D /* Info.plist */,
-			);
-			path = READiUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,42 +146,6 @@
 			productReference = ABCDCEBB1E83047D00450E8D /* READi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ABCDCED01E83047D00450E8D /* READiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ABCDCEE81E83047E00450E8D /* Build configuration list for PBXNativeTarget "READiTests" */;
-			buildPhases = (
-				ABCDCECD1E83047D00450E8D /* Sources */,
-				ABCDCECE1E83047D00450E8D /* Frameworks */,
-				ABCDCECF1E83047D00450E8D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ABCDCED31E83047D00450E8D /* PBXTargetDependency */,
-			);
-			name = READiTests;
-			productName = READiTests;
-			productReference = ABCDCED11E83047D00450E8D /* READiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ABCDCEDB1E83047D00450E8D /* READiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ABCDCEEB1E83047E00450E8D /* Build configuration list for PBXNativeTarget "READiUITests" */;
-			buildPhases = (
-				ABCDCED81E83047D00450E8D /* Sources */,
-				ABCDCED91E83047D00450E8D /* Frameworks */,
-				ABCDCEDA1E83047D00450E8D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ABCDCEDE1E83047D00450E8D /* PBXTargetDependency */,
-			);
-			name = READiUITests;
-			productName = READiUITests;
-			productReference = ABCDCEDC1E83047D00450E8D /* READiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,35 +153,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Jonathan Keller";
 				TargetAttributes = {
 					ABCDCEBA1E83047D00450E8D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KJT8HWZKJX;
 						LastSwiftMigration = 0940;
-						DevelopmentTeam = 75BNT2TPX4;
-						ProvisioningStyle = Automatic;
-					};
-					ABCDCED01E83047D00450E8D = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 75BNT2TPX4;
-						LastSwiftMigration = 0940;
-						ProvisioningStyle = Automatic;
-						TestTargetID = ABCDCEBA1E83047D00450E8D;
-					};
-					ABCDCEDB1E83047D00450E8D = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 75BNT2TPX4;
-						LastSwiftMigration = 0940;
-						ProvisioningStyle = Automatic;
-						TestTargetID = ABCDCEBA1E83047D00450E8D;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = ABCDCEB61E83047D00450E8D /* Build configuration list for PBXProject "READi" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -290,8 +178,6 @@
 			projectRoot = "";
 			targets = (
 				ABCDCEBA1E83047D00450E8D /* READi */,
-				ABCDCED01E83047D00450E8D /* READiTests */,
-				ABCDCEDB1E83047D00450E8D /* READiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,20 +192,6 @@
 				AB36868B1E886BFE00206480 /* gas_mask.png in Resources */,
 				ABCDCEC81E83047D00450E8D /* Assets.xcassets in Resources */,
 				ABCDCEF31E8304A700450E8D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABCDCECF1E83047D00450E8D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABCDCEDA1E83047D00450E8D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,36 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABCDCECD1E83047D00450E8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABCDCED61E83047D00450E8D /* READiTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABCDCED81E83047D00450E8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABCDCEE11E83047D00450E8D /* READiUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ABCDCED31E83047D00450E8D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ABCDCEBA1E83047D00450E8D /* READi */;
-			targetProxy = ABCDCED21E83047D00450E8D /* PBXContainerItemProxy */;
-		};
-		ABCDCEDE1E83047D00450E8D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ABCDCEBA1E83047D00450E8D /* READi */;
-			targetProxy = ABCDCEDD1E83047D00450E8D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ABCDCEC91E83047D00450E8D /* LaunchScreen.storyboard */ = {
@@ -410,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -460,6 +304,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -468,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -510,6 +356,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -519,7 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 75BNT2TPX4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KJT8HWZKJX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -530,9 +378,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nobodynada.READi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Gerwin;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -540,7 +388,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 75BNT2TPX4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -553,69 +402,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		ABCDCEE91E83047E00450E8D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 75BNT2TPX4;
-				INFOPLIST_FILE = READiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nobodynada.READiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/READi.app/READi";
-			};
-			name = Debug;
-		};
-		ABCDCEEA1E83047E00450E8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 75BNT2TPX4;
-				INFOPLIST_FILE = READiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nobodynada.READiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/READi.app/READi";
-			};
-			name = Release;
-		};
-		ABCDCEEC1E83047E00450E8D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 75BNT2TPX4;
-				INFOPLIST_FILE = READiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nobodynada.READiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = READi;
-			};
-			name = Debug;
-		};
-		ABCDCEED1E83047E00450E8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 75BNT2TPX4;
-				INFOPLIST_FILE = READiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nobodynada.READiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = READi;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -636,24 +423,6 @@
 			buildConfigurations = (
 				ABCDCEE61E83047E00450E8D /* Debug */,
 				ABCDCEE71E83047E00450E8D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ABCDCEE81E83047E00450E8D /* Build configuration list for PBXNativeTarget "READiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ABCDCEE91E83047E00450E8D /* Debug */,
-				ABCDCEEA1E83047E00450E8D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ABCDCEEB1E83047E00450E8D /* Build configuration list for PBXNativeTarget "READiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ABCDCEEC1E83047E00450E8D /* Debug */,
-				ABCDCEED1E83047E00450E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -88,15 +88,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		}
 	}
 
-	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 		self.application = application
 		
 		return true
 	}
 	
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-		let splitViewController = self.window!.rootViewController!.childViewControllers[1] as! UISplitViewController
+		let splitViewController = self.window!.rootViewController!.children[1] as! UISplitViewController
 		let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
 		navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
 		splitViewController.delegate = self

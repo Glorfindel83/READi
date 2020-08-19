@@ -75,7 +75,7 @@ class ReportTableViewCell: UITableViewCell, DTAttributedTextContentViewDelegate 
 		
 		if let body = report.attributedBody {
 			body.enumerateAttributes(in: NSRange(0..<body.length)) {attributes, range, stop in
-				if let attachment = attributes[NSAttributedStringKey.attachment] as? GasMaskTextAttachment {
+				if let attachment = attributes[NSAttributedString.Key.attachment] as? GasMaskTextAttachment {
 					attachment.width = self.bodyLabel.bounds.width
 				}
 			}
@@ -182,10 +182,10 @@ class ReportTableViewCell: UITableViewCell, DTAttributedTextContentViewDelegate 
 			for (key, value) in attrs {
 				//For each attribute at the touch....
 				
-				if key == NSAttributedStringKey.attachment, let attachment = value as? GasMaskTextAttachment {
+				if key == NSAttributedString.Key.attachment, let attachment = value as? GasMaskTextAttachment {
 					results.append(ClickableElement.gasMask(attachment: attachment))
 				}
-				else if key == NSAttributedStringKey.link, let target = value as? URL {
+				else if key == NSAttributedString.Key.link, let target = value as? URL {
 					results.append(ClickableElement.link(target: target))
 				}
 				

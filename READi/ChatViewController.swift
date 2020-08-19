@@ -67,16 +67,16 @@ class ChatViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
 		super.viewWillAppear(animated);
 		
 		// Register for keyboard notifications
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated);
 		
 		// Unregister for keyboard notifications
-		NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-		NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+		NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 	
 	@objc func keyboardWillShow(notification: NSNotification) {
@@ -87,9 +87,9 @@ class ChatViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
 		keyboardShown = true;
 		
 		let userInfo = notification.userInfo!
-		let keyboardSize = userInfo[UIKeyboardFrameBeginUserInfoKey] as! CGRect
+		let keyboardSize = userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! CGRect
 		bottomConstraint.constant = -keyboardSize.height;
-		UIView.animate(withDuration: userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double) {
+		UIView.animate(withDuration: userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double) {
 			self.view.layoutIfNeeded()
 		}
 	}
@@ -102,7 +102,7 @@ class ChatViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
 		
 		let userInfo = notification.userInfo!
 		bottomConstraint.constant = 0;
-		UIView.animate(withDuration: userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double) {
+		UIView.animate(withDuration: userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double) {
 			self.view.layoutIfNeeded()
 		}
 	}

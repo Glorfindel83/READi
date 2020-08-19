@@ -212,10 +212,10 @@ class Report: CustomStringConvertible {
             )
             if let body = self._attributedBody as? NSMutableAttributedString {
                 body.enumerateAttributes(in: NSRange(0..<body.length)) {attributes, range, stop in
-                    if let attachment = attributes[NSAttributedStringKey.attachment] as? DTImageTextAttachment {
+					if let attachment = attributes[NSAttributedString.Key.attachment] as? DTImageTextAttachment {
                         let newAttachment = GasMaskTextAttachment()
                         newAttachment.imageURL = attachment.contentURL
-                        body.setAttributes([NSAttributedStringKey.attachment:newAttachment], range: range)
+						body.setAttributes([NSAttributedString.Key.attachment:newAttachment], range: range)
                     }
                 }
             }
