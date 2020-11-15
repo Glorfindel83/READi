@@ -206,6 +206,8 @@ class Report: CustomStringConvertible {
                 options: [
                     DTDefaultFontFamily:UIFont.systemFont(ofSize: UIFont.systemFontSize).familyName,
                     DTDefaultFontSize:17.0,
+					DTDefaultTextColor:UIColor.label,
+					DTDefaultLinkColor:UIColor.link,
                     DTUseiOS6Attributes:true
                 ],
                 documentAttributes: nil

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5HT-ep-v5o">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5HT-ep-v5o">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +13,7 @@
             <objects>
                 <navigationController id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -40,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llp-tz-JZe">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZU-0Y-S0D">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
@@ -48,28 +45,28 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-aX-HhG">
                                                 <rect key="frame" x="20" y="20" width="323" height="40"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0W-Cm-Mam">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0W-Cm-Mam">
                                                         <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
                                                         <state key="normal" title="spam/rude"/>
                                                         <connections>
                                                             <action selector="spamPressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="FRN-WY-KrF"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk6-CW-0CR">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk6-CW-0CR">
                                                         <rect key="frame" x="105" y="0.0" width="97.5" height="40"/>
                                                         <state key="normal" title="vandalism"/>
                                                         <connections>
                                                             <action selector="vandalismPressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="Ywd-LH-839"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-Zp-RTh">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-Zp-RTh">
                                                         <rect key="frame" x="202.5" y="0.0" width="42.5" height="40"/>
                                                         <state key="normal" title="naa"/>
                                                         <connections>
                                                             <action selector="naaPressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="mti-dF-ByD"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVs-ak-chk">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVs-ak-chk">
                                                         <rect key="frame" x="245" y="0.0" width="42.5" height="40"/>
                                                         <state key="normal" title="fp"/>
                                                         <connections>
@@ -95,31 +92,31 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-Fi-F1A">
                                                         <rect key="frame" x="8" y="36" width="327" height="1"/>
-                                                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="AL1-qH-cMC"/>
                                                         </constraints>
                                                     </view>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-i1-2Hv">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Body" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-i1-2Hv">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" placeholder="YES" id="Xxl-uX-gfK"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <color key="textColor" systemColor="labelColor"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tXg-Qt-Hfo">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Reason" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tXg-Qt-Hfo">
                                                         <rect key="frame" x="0.0" y="37" width="343" height="36"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" placeholder="YES" id="kaQ-Yo-FO6"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <color key="textColor" systemColor="labelColor"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstItem="tXg-Qt-Hfo" firstAttribute="top" secondItem="dUT-Fi-F1A" secondAttribute="bottom" id="1qT-CX-fp6"/>
                                                     <constraint firstItem="Ej9-i1-2Hv" firstAttribute="leading" secondItem="NHu-jx-ACy" secondAttribute="leading" id="CwO-Bc-9M9"/>
@@ -134,7 +131,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="NHu-jx-ACy" secondAttribute="bottom" constant="20" id="Fj7-8l-6ec"/>
                                             <constraint firstItem="NHu-jx-ACy" firstAttribute="top" secondItem="mhN-aX-HhG" secondAttribute="bottom" constant="4" id="Kmz-Zm-mNf"/>
@@ -155,7 +152,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="llp-tz-JZe" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="j22-ug-4Be"/>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="llp-tz-JZe" secondAttribute="bottom" id="o8t-cJ-Mjw"/>
@@ -257,7 +254,7 @@ Just a minute…</string>
                         <color key="backgroundColor" white="0.91115935643514001" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReportTableViewCell" rowHeight="321" id="WCw-Qf-5nD" customClass="ReportTableViewCell" customModule="READi" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="375" height="321"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="321"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="321"/>
@@ -267,7 +264,7 @@ Just a minute…</string>
                                             <rect key="frame" x="16" y="11" width="343" height="299"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-ZZ-feq">
-                                                    <rect key="frame" x="8" y="8" width="327" height="27"/>
+                                                    <rect key="frame" x="8" y="8" width="327" height="26.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26.5" id="RpR-De-gbk"/>
                                                     </constraints>
@@ -276,30 +273,30 @@ Just a minute…</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9C3-Tc-CJK">
-                                                    <rect key="frame" x="8" y="35" width="327" height="30"/>
+                                                    <rect key="frame" x="8" y="34.5" width="327" height="30"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcI-KT-CfD">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcI-KT-CfD">
                                                             <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
                                                             <state key="normal" title="spam/rude"/>
                                                             <connections>
                                                                 <action selector="spamPressed:" destination="WCw-Qf-5nD" eventType="touchUpInside" id="iGf-1i-Z3x"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85p-zQ-4lI">
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85p-zQ-4lI">
                                                             <rect key="frame" x="106" y="0.0" width="99" height="30"/>
                                                             <state key="normal" title="vandalism"/>
                                                             <connections>
                                                                 <action selector="vandalismPressed:" destination="WCw-Qf-5nD" eventType="touchUpInside" id="Zas-Gp-2ev"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxg-34-Jas">
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxg-34-Jas">
                                                             <rect key="frame" x="205" y="0.0" width="43" height="30"/>
                                                             <state key="normal" title="naa"/>
                                                             <connections>
                                                                 <action selector="naaPressed:" destination="WCw-Qf-5nD" eventType="touchUpInside" id="kZY-ZV-hsY"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHu-nh-jMb">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHu-nh-jMb">
                                                             <rect key="frame" x="248" y="0.0" width="43" height="30"/>
                                                             <state key="normal" title="fp"/>
                                                             <connections>
@@ -321,14 +318,14 @@ Just a minute…</string>
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNz-Nm-RqH">
-                                                    <rect key="frame" x="8" y="73" width="327" height="218"/>
+                                                    <rect key="frame" x="8" y="72.5" width="327" height="218.5"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="RNz-Nm-RqH" firstAttribute="top" secondItem="9C3-Tc-CJK" secondAttribute="bottom" constant="8" id="8cr-1f-eWu"/>
                                                 <constraint firstItem="4fj-ZZ-feq" firstAttribute="trailing" secondItem="ttv-om-AEM" secondAttribute="trailingMargin" id="8yY-Bh-YIT"/>
@@ -343,7 +340,7 @@ Just a minute…</string>
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.91115935640000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
                                         <constraint firstItem="ttv-om-AEM" firstAttribute="bottom" secondItem="37f-cq-3Eg" secondAttribute="bottomMargin" id="2RM-LF-LNC"/>
                                         <constraint firstItem="ttv-om-AEM" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" id="KLk-96-Zce"/>
@@ -363,17 +360,17 @@ Just a minute…</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingTableViewCell" rowHeight="40" id="kSx-YV-2y0" customClass="LoadingTableViewCell" customModule="READi" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="343" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="349" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSx-YV-2y0" id="qTk-Lb-onG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="oKl-9x-x8v">
-                                            <rect key="frame" x="177" y="10" width="20" height="20"/>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="oKl-9x-x8v">
+                                            <rect key="frame" x="177.5" y="10" width="20" height="20"/>
                                         </activityIndicatorView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.91115935640000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
                                         <constraint firstItem="oKl-9x-x8v" firstAttribute="centerY" secondItem="qTk-Lb-onG" secondAttribute="centerY" id="fL5-ht-P49"/>
                                         <constraint firstItem="oKl-9x-x8v" firstAttribute="centerX" secondItem="qTk-Lb-onG" secondAttribute="centerX" id="fQ1-an-51S"/>
@@ -418,7 +415,7 @@ Just a minute…</string>
             <objects>
                 <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -430,6 +427,9 @@ Just a minute…</string>
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Tll-UG-LXB"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chat" width="25" height="25"/>
         <image name="chat-selected" width="25" height="25"/>
@@ -438,8 +438,17 @@ Just a minute…</string>
         <image name="reports" width="25" height="24"/>
         <image name="reports-selected" width="25" height="24"/>
         <image name="up" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
-    </inferredMetricsTieBreakers>
 </document>

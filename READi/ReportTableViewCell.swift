@@ -112,9 +112,9 @@ class ReportTableViewCell: UITableViewCell, DTAttributedTextContentViewDelegate 
             }
             
             if report.deletedAt != nil {
-                background.backgroundColor = #colorLiteral(red: 0.9552622677, green: 0.9176470588, blue: 0.9176470588, alpha: 1)
+				background.backgroundColor = UIColor.init(named: "deleted")
             } else {
-                background.backgroundColor = .white
+				background.backgroundColor = .systemBackground
             }
 			
 			//draw the plain text temporarily while rendering the HTML asynchronously

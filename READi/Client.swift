@@ -170,8 +170,11 @@ open class Client: NSObject, URLSessionDataDelegate {
 	}
 	
 	private func performTask(_ task: URLSessionTask, completion: @escaping (Data?, HTTPURLResponse?, Error?) -> Void) {
-		tasks[task] = HTTPTask(task: task, completion: completion)
-		task.resume()
+		// cf. https://stackoverflow.com/a/28910283/4751173
+		DispatchQueue.main.async {
+			self.tasks[task] = HTTPTask(task: task, completion: completion)
+			task.resume()
+		}
 	}
 	
 	
